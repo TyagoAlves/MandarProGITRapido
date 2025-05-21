@@ -45,7 +45,7 @@ O script `manda-pro-git.ps1` automatiza o fluxo de trabalho comum do Git, combin
 .\manda-pro-git.ps1
 
 # Com mensagem de commit personalizada
-.\manda-pro-git.ps1 -msg "Sua mensagem de commit aqui"
+.\manda-pro-git.ps1 "Sua mensagem de commit aqui"
 ```
 
 ## ✨ Funcionalidades
@@ -70,7 +70,7 @@ Adiciona todos os arquivos modificados ao staging area para serem incluídos no 
 ```powershell
 # Faz commit
 Write-Host "Realizando commit..." -ForegroundColor Yellow
-& git commit -m "$msg"
+& git commit "$msg"
 ```
 Cria um commit com todos os arquivos no staging area, usando a mensagem fornecida ou a mensagem padrão.
 
@@ -106,7 +106,7 @@ Resultado: Commit com a mensagem "Alterações automáticas"
 
 ### Commit com Mensagem Personalizada
 ```powershell
-.\manda-pro-git.ps1 -msg "Corrigido bug na função de login"
+.\manda-pro-git.ps1 "Corrigido bug na função de login"
 ```
 Resultado: Commit com a mensagem "Corrigido bug na função de login"
 
